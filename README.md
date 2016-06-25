@@ -10,7 +10,7 @@ drwxr-xr-x  3 carl 4.0K Jun 25 12:12 configuration
 -rw-r--r--  1 root  287 Jun 25 12:11 configuration.nix
 -rw-r--r--  1 root  839 Jun 23 04:24 hardware-configuration.nix
 
-/etc/nixos $ cat configuration.nix                                                                                                                          1 
+/etc/nixos $ cat configuration.nix
 { config, pkgs, ... }:
 
 {
