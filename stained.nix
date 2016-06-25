@@ -20,6 +20,4 @@
     enable = true;
     emulateWheel = true;
   };
-
-  system.stateVersion = "16.03";
 }
