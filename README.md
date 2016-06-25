@@ -1,4 +1,4 @@
-Check out this repo at /etc/nixos/configuration, then update configuration.nix
+Clone this repo at /etc/nixos/configuration, then update configuration.nix
 accordingly.
 
 ```
