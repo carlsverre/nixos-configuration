@@ -5,6 +5,7 @@
     daemonIONiceLevel = 4;
     daemonNiceLevel = 10;
     maxJobs = 8;
+    useChroot = true;
     extraOptions = ''
       auto-optimise-store = true
       gc-keep-outputs = true

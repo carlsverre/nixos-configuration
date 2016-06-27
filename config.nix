@@ -12,7 +12,7 @@
     enableGhostscriptFonts = true;
     fonts = with pkgs; [
       corefonts
-      inconsolata
+      powerline-fonts
       unifont
       ubuntu_font_family
       noto-fonts
