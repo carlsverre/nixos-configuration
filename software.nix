@@ -13,5 +13,8 @@
     git
     htop
     atop
+    xorg.xf86inputsynaptics
+    wpa_supplicant_gui
+    unzip
   ];
 }

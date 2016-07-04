@@ -12,8 +12,8 @@
     maxJobs = 8;
     useSandbox = true;
     extraOptions = ''
-    auto-optimise-store = true
-    gc-keep-outputs = true
+      auto-optimise-store = true
+      gc-keep-outputs = true
     '';
 
     gc = {

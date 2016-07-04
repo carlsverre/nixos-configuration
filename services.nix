@@ -35,7 +35,7 @@
       desktopManager.xterm.enable = false;
 
       synaptics = {
-        enable = false;
+        enable = true;
       };
     };
 
