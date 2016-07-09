@@ -22,4 +22,6 @@
   };
 
   time.timeZone = "America/Los_Angeles";
+
+  environment.variables."SSL_CERT_FILE" = "/etc/ssl/certs/ca-bundle.crt";
 }
