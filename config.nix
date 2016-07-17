@@ -13,6 +13,7 @@
     fonts = with pkgs; [
       corefonts
       powerline-fonts
+      hack-font
       unifont
       ubuntu_font_family
       noto-fonts

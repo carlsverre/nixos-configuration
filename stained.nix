@@ -15,10 +15,22 @@
 
   networking.hostName = "stained";
 
-  hardware.trackpoint = {
-    enable = true;
-    emulateWheel = true;
-    speed = 180;
-    sensitivity = 200;
+  hardware = {
+    trackpoint = {
+      enable = true;
+      emulateWheel = true;
+      speed = 180;
+      sensitivity = 200;
+    };
+
+    opengl = {
+      driSupport32Bit = true;
+      s3tcSupport = true;
+    };
+
+    pulseaudio = {
+      enable = true;
+      support32Bit = true;
+    };
   };
 }

@@ -6,7 +6,7 @@
 
   environment.systemPackages = with pkgs; [
     wget
-    rxvt_unicode
+    rxvt_unicode-with-plugins
     chromium
     dmenu
     i3status
