@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth.enable = false;
 
   networking = {
     enableIPv6 = false;
@@ -11,7 +11,7 @@
 
   services = {
     # Enable CUPS to print documents.
-    printing.enable = true;
+    printing.enable = false;
 
     xserver = {
       enable = true;
