@@ -16,7 +16,7 @@
     xserver = {
       enable = true;
       layout = "us";
-      xkbOptions = "caps:escape";
+      xkbOptions = "caps:escape,altwin:swap_alt_win";
 
       displayManager = {
         slim = {
