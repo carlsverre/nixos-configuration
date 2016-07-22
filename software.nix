@@ -9,7 +9,7 @@
     rxvt_unicode-with-plugins
     chromium
     dmenu
-    i3status
+    i3blocks-gaps
     git
     htop
     atop
