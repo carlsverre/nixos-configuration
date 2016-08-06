@@ -16,5 +16,8 @@
     xorg.xf86inputsynaptics
     wpa_supplicant_gui
     unzip
+    acpi
+    xclip
+    compton
   ];
 }
