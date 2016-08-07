@@ -32,7 +32,10 @@
         default = "i3-gaps";
       };
 
-      desktopManager.xterm.enable = false;
+      desktopManager = {
+        xterm.enable = true;
+        default = "xterm";
+      };
 
       synaptics = {
         enable = true;
