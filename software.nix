@@ -4,10 +4,9 @@
   nixpkgs.config = {
     allowUnfree = true;
 
-    chromium = {
-      enablePepperFlash = true; # Chromium removed support for Mozilla (NPAPI) plugins so Adobe Flash no longer works
+    google-chrome = {
+      enablePepperFlash = true;
       enablePepperPDF = true;
-      hiDPISupport = true;
     };
   };
 
@@ -28,6 +27,6 @@
     acpi
     xclip
     compton
-    chromium
+    google-chrome
   ];
 }
