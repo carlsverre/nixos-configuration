@@ -28,5 +28,6 @@
     xclip
     compton
     google-chrome
+    sysdig
   ];
 }
