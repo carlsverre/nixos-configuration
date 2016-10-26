@@ -9,6 +9,10 @@
     wireless.enable = true;
   };
 
+  virtualisation = {
+    docker.enable = true;
+  };
+
   services = {
     # Enable CUPS to print documents.
     printing.enable = false;

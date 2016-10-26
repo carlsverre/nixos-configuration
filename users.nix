@@ -8,6 +8,7 @@
           [
             "wheel" "disk" "audio" "video"
             "networkmanager" "systemd-journal"
+            "docker"
           ];
         isNormalUser = true;
         uid = 1000;

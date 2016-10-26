@@ -1,22 +1,27 @@
 { config, pkgs, ... }:
 
 {
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub.device = "/dev/sda";
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    loader.grub.device = "/dev/sda";
 
-  # Note: in addition to disabling the audit service, nixos also requires
-  # disabling audit at boot time if you want to remove all syscall overhead
+    # Note: in addition to disabling the audit service, nixos also requires
+    # disabling audit at boot time if you want to remove all syscall overhead
+    kernelParams = [ "audit=0" ];
+
+    extraModulePackages = [ pkgs.linuxPackages.sysdig ];
+
+    initrd.luks.devices = [
+      {
+        name = "root";
+        device = "/dev/sda3";
+        preLVM = true;
+      }
+    ];
+  };
+
   security.audit.enable = false;
-  boot.kernelParams = [ "audit=0" ];
-
-  boot.initrd.luks.devices = [
-    {
-      name = "root";
-      device = "/dev/sda3";
-      preLVM = true;
-    }
-  ];
 
   networking.hostName = "stained";
 
