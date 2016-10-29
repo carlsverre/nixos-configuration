@@ -10,7 +10,10 @@
   };
 
   virtualisation = {
-    docker.enable = true;
+    docker = {
+      enable = true;
+      extraOptions = "--insecure-registry psy3.memcompute.com";
+    };
   };
 
   services = {
