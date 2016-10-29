@@ -29,5 +29,6 @@
     compton
     google-chrome
     sysdig
+    arandr
   ];
 }
