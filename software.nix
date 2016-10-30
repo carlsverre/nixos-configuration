@@ -16,7 +16,7 @@
   environment.systemPackages = with pkgs; [
     wget
     rxvt_unicode-with-plugins
-    dmenu
+    rofi
     i3blocks-gaps
     git
     htop
