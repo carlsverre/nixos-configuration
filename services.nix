@@ -25,13 +25,10 @@
       layout = "us";
       xkbOptions = "caps:escape,altwin:swap_alt_win";
 
-      displayManager = {
-        slim = {
-          enable = true;
-          defaultUser = "carl";
-        };
-
-        xserverArgs = [ "-dpi 144" ];
+      displayManager.slim = {
+        enable = true;
+        defaultUser = "carl";
+        autoLogin = true;
       };
 
       windowManager = {
@@ -40,8 +37,8 @@
       };
 
       desktopManager = {
-        xterm.enable = true;
-        default = "xterm";
+        xterm.enable = false;
+        default = "none";
       };
 
       synaptics = {
