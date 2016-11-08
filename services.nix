@@ -6,7 +6,9 @@
   networking = {
     enableIPv6 = false;
     nameservers = [ "8.8.8.8" "8.8.4.4" ];
-    wireless.enable = true;
+    networkmanager = {
+      enable = true;
+    };
   };
 
   virtualisation = {
