@@ -48,4 +48,8 @@
       support32Bit = true;
     };
   };
+
+  services = {
+    tlp.enable = true;
+  };
 }

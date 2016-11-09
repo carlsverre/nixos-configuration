@@ -21,8 +21,11 @@
     google-chrome
     htop
     i3blocks-gaps
+    linuxPackages.acpi_call
+    powertop
     rxvt_unicode-with-plugins
     sysdig
+    tlp
     wget
     wpa_supplicant_gui
     xorg.xf86inputsynaptics
