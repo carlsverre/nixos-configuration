@@ -24,6 +24,7 @@
     rxvt_unicode-with-plugins
     sysdig
     wget
+    wpa_supplicant_gui
     xorg.xf86inputsynaptics
   ];
 }
