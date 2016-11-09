@@ -10,7 +10,10 @@
     # disabling audit at boot time if you want to remove all syscall overhead
     kernelParams = [ "audit=0" ];
 
-    extraModulePackages = [ pkgs.linuxPackages.sysdig ];
+    extraModulePackages = with pkgs.linuxPackages; [
+      sysdig
+      acpi_call
+    ];
 
     initrd.luks.devices = [
       {
@@ -47,6 +50,8 @@
       enable = true;
       support32Bit = true;
     };
+
+    bluetooth.enable = false;
   };
 
   services = {

@@ -21,7 +21,6 @@
     google-chrome
     htop
     i3blocks-gaps
-    linuxPackages.acpi_call
     powertop
     rxvt_unicode-with-plugins
     sysdig
