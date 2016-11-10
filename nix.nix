@@ -9,7 +9,7 @@
     buildCores = 0;
     daemonIONiceLevel = 4;
     daemonNiceLevel = 10;
-    maxJobs = 8;
+    maxJobs = 4;
     useSandbox = true;
     extraOptions = ''
       auto-optimise-store = true
