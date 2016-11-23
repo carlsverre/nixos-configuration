@@ -52,7 +52,7 @@
       enable = true;
       extensionPackages = [ pkgs.mopidy-gmusic ];
       extraConfigFiles = [
-        "/home/carl/.mopidy"
+        "/var/lib/mopidy/config.cnf"
       ];
     };
   };
