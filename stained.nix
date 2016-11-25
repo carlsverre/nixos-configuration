@@ -42,7 +42,6 @@
     };
 
     opengl = {
-      driSupport32Bit = true;
       s3tcSupport = true;
     };
 
@@ -56,5 +55,10 @@
 
   services = {
     tlp.enable = true;
+
+    xserver = {
+      useGlamor = true;
+      videoDrivers = [ "intel" ];
+    };
   };
 }
