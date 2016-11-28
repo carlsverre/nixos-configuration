@@ -8,6 +8,10 @@
       enablePepperFlash = true;
       enablePepperPDF = true;
     };
+
+    firefox = {
+      jre = true;
+    };
   };
 
   programs.zsh.enable = true;
@@ -19,6 +23,7 @@
     compton
     git
     google-chrome
+    firefox
     htop
     i3blocks-gaps
     powertop
