@@ -16,7 +16,10 @@
 
   services = {
     # Enable CUPS to print documents.
-    printing.enable = false;
+    printing = {
+      enable = true;
+      drivers = [ pkgs.gutenprint ];
+    };
 
     xserver = {
       enable = true;
