@@ -21,11 +21,14 @@
     acpi
     atop
     compton
+    dunst
+    exfat
+    firefox
     git
     google-chrome
-    firefox
     htop
     i3blocks-gaps
+    libnotify
     powertop
     rxvt_unicode-with-plugins
     sysdig
@@ -33,7 +36,5 @@
     wget
     wpa_supplicant_gui
     xorg.xf86inputsynaptics
-    libnotify
-    dunst
   ];
 }
