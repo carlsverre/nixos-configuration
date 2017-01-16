@@ -26,11 +26,15 @@
 
   security.audit.enable = false;
 
-  networking.hostName = "stained";
+  networking = rec {
+    hostName = "stained";
 
-  networking.firewall = {
-    # chromecast support
-    extraCommands = "iptables -I INPUT -p udp -m udp --dport 32768:61000 -j ACCEPT";
+    firewall = {
+      # chromecast support
+      extraCommands = "iptables -I INPUT -p udp -m udp --dport 32768:61000 -j ACCEPT";
+    };
+
+    extraHosts = "127.0.0.1 ${hostName}";
   };
 
   hardware = {

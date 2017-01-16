@@ -33,8 +33,11 @@
       };
 
       windowManager = {
-        i3-gaps.enable = true;
-        default = "i3-gaps";
+        i3 = {
+          enable = true;
+          package = pkgs.i3-gaps;
+        };
+        default = "i3";
       };
 
       desktopManager = {
@@ -53,7 +56,10 @@
 
     mopidy = {
       enable = true;
-      extensionPackages = [ pkgs.mopidy-gmusic ];
+      extensionPackages = [
+        pkgs.mopidy-gmusic
+        pkgs.mopidy-spotify
+      ];
       extraConfigFiles = [
         "/var/lib/mopidy/config.cnf"
       ];
