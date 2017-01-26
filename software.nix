@@ -3,15 +3,6 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
-
-    google-chrome = {
-      enablePepperFlash = true;
-      enablePepperPDF = true;
-    };
-
-    firefox = {
-      jre = true;
-    };
   };
 
   programs.zsh.enable = true;
@@ -23,9 +14,7 @@
     compton
     dunst
     exfat
-    firefox
     git
-    google-chrome
     htop
     i3blocks-gaps
     libnotify
@@ -34,6 +23,7 @@
     sysdig
     tlp
     wget
+    curl
     wpa_supplicant_gui
     xorg.xf86inputsynaptics
   ];
