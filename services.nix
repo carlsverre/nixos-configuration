@@ -53,16 +53,5 @@
     physlock = {
       enable = true;
     };
-
-    mopidy = {
-      enable = true;
-      extensionPackages = [
-        pkgs.mopidy-gmusic
-        pkgs.mopidy-spotify
-      ];
-      extraConfigFiles = [
-        "/var/lib/mopidy/config.cnf"
-      ];
-    };
   };
 }
