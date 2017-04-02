@@ -30,8 +30,11 @@
     hostName = "stained";
 
     firewall = {
-      # chromecast support
-      extraCommands = "iptables -I INPUT -p udp -m udp --dport 32768:61000 -j ACCEPT";
+      # chromecast + docker support
+      extraCommands = "
+        iptables -I INPUT -p udp -m udp --dport 32768:61000 -j ACCEPT;
+        iptables -I INPUT -i docker0 -j ACCEPT;
+      ";
     };
 
     extraHosts = "127.0.0.1 ${hostName}";

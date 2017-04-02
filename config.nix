@@ -19,6 +19,8 @@
       noto-fonts
       symbola
       font-awesome-ttf
+      lato
+      inconsolata
     ];
   };
 
