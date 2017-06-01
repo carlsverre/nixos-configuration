@@ -3,6 +3,10 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
+    firefox = {
+      enableAdobeFlash = true;
+      enableGoogleTalkPlugin = true;
+    };
   };
 
   programs.zsh.enable = true;
