@@ -57,15 +57,6 @@
       support32Bit = true;
     };
 
-    bluetooth.enable = false;
-  };
-
-  services = {
-    tlp.enable = true;
-
-    xserver = {
-      useGlamor = true;
-      videoDrivers = [ "intel" ];
-    };
+    bluetooth.enable = true;
   };
 }

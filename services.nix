@@ -15,6 +15,8 @@
   };
 
   services = {
+    tlp.enable = true;
+
     # Enable CUPS to print documents.
     printing = {
       enable = true;
@@ -25,6 +27,8 @@
       enable = true;
       layout = "us";
       xkbOptions = "caps:escape,altwin:swap_alt_win";
+      useGlamor = true;
+      videoDrivers = [ "intel" ];
 
       displayManager.slim = {
         enable = true;
@@ -45,8 +49,10 @@
         default = "none";
       };
 
-      synaptics = {
+      libinput = {
         enable = true;
+        tapping = false;
+        accelSpeed = "0.5";
       };
     };
 
