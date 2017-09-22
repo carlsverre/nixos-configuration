@@ -9,5 +9,5 @@
 
   security.audit.enable = false;
 
-  nix.maxJobs = 8;
+  nix.maxJobs = 2;
 }
