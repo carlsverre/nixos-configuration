@@ -7,24 +7,5 @@
     defaultLocale = "en_US.UTF-8";
   };
 
-  fonts = {
-    enableFontDir = true;
-    enableGhostscriptFonts = true;
-    fonts = with pkgs; [
-      corefonts
-      powerline-fonts
-      hack-font
-      unifont
-      ubuntu_font_family
-      noto-fonts
-      symbola
-      font-awesome-ttf
-      lato
-      inconsolata
-    ];
-  };
-
-  time.timeZone = "America/Los_Angeles";
-
   environment.variables."SSL_CERT_FILE" = "/etc/ssl/certs/ca-bundle.crt";
 }

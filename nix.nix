@@ -9,7 +9,6 @@
     buildCores = 0;
     daemonIONiceLevel = 4;
     daemonNiceLevel = 10;
-    maxJobs = 4;
     useSandbox = true;
     extraOptions = ''
       auto-optimise-store = true
@@ -21,5 +20,5 @@
     };
   };
 
-  system.stateVersion = "16.09";
+  system.stateVersion = "18.03";
 }

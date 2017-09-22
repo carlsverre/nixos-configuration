@@ -24,6 +24,12 @@
     ];
   };
 
+  nix = {
+    maxJobs = 4;
+  };
+
+  time.timeZone = "America/Los_Angeles";
+
   security.audit.enable = false;
 
   networking = rec {
