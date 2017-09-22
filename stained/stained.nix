@@ -24,9 +24,7 @@
     ];
   };
 
-  nix = {
-    maxJobs = 4;
-  };
+  nix.maxJobs = 4;
 
   time.timeZone = "America/Los_Angeles";
 
