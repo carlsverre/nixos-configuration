@@ -17,6 +17,21 @@
   services = {
     tlp.enable = true;
 
+    dnsmasq = {
+      enable = true;
+      resolveLocalQueries = true;
+      servers = [
+        "/docker/172.18.0.1"
+        "/memsql-master/172.18.0.1"
+        "8.8.8.8"
+        "8.8.4.4"
+      ];
+      extraConfig = ''
+        interface=lo
+        bind-interfaces
+      '';
+    };
+
     # Enable CUPS to print documents.
     printing = {
       enable = true;
