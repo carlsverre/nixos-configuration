@@ -11,8 +11,7 @@
         iptables -I INPUT -i docker0 -j ACCEPT;
       ";
 
-      # allowedTCPPorts = [ ... ];
-      # allowedUDPPorts = [ ... ];
+      allowedTCPPorts = [ 80 443 ];
     };
 
     extraHosts = "127.0.0.1 ${hostName}";
