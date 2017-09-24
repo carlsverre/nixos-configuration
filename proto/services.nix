@@ -40,13 +40,32 @@
 
       virtualHosts = {
         "proto.sh" = {
-          serverAliases = [ "proto.sh" "www.proto.sh" ];
+          globalRedirect = "www.proto.sh";
+          enableACME = true;
+          forceSSL = true;
+        };
 
+        "www.proto.sh" = {
           forceSSL = true;
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/proto.sh";
+            root = "/srv/www-proto-sh";
+          };
+        };
+
+        "carlsverre.com" = {
+          globalRedirect = "www.carlsverre.com";
+          enableACME = true;
+          forceSSL = true;
+        };
+
+        "www.carlsverre.com" = {
+          forceSSL = true;
+          enableACME = true;
+
+          locations."/" = {
+            root = "/srv/www-carlsverre-com";
           };
         };
       };
