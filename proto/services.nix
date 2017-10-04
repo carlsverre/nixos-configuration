@@ -68,6 +68,21 @@
             root = "/srv/www-carlsverre-com";
           };
         };
+
+        "lummy.com" = {
+          globalRedirect = "www.lummy.co";
+          enableACME = true;
+          forceSSL = true;
+        };
+
+        "www.lummy.co" = {
+          forceSSL = true;
+          enableACME = true;
+
+          locations."/" = {
+            root = "/srv/www-lummy-co";
+          };
+        };
       };
     };
   };
