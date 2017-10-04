@@ -69,7 +69,7 @@
           };
         };
 
-        "lummy.com" = {
+        "lummy.co" = {
           globalRedirect = "www.lummy.co";
           enableACME = true;
           forceSSL = true;
