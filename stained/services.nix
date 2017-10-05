@@ -17,6 +17,15 @@
   services = {
     tlp.enable = true;
 
+    kbfs = {
+      enable = true;
+      mountPoint = "/keybase";
+      extraFlags = [
+          "-label kbfs"
+          "-mount-type normal"
+        ];
+    };
+
     dnsmasq = {
       enable = true;
       resolveLocalQueries = true;
