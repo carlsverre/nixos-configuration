@@ -21,9 +21,8 @@
       enable = true;
       mountPoint = "/keybase";
       extraFlags = [
-          "-label kbfs"
-          "-mount-type normal"
-        ];
+        "-label kbfs"
+      ];
     };
 
     dnsmasq = {
