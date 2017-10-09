@@ -83,6 +83,18 @@
             root = "/srv/www-lummy-co";
           };
         };
+
+        "lummy.lighting" = {
+          globalRedirect = "www.lummy.co";
+          enableACME = true;
+          forceSSL = true;
+        };
+
+        "www.lummy.lighting" = {
+          globalRedirect = "www.lummy.co";
+          enableACME = true;
+          forceSSL = true;
+        };
       };
     };
   };
