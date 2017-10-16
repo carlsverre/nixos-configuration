@@ -54,6 +54,8 @@
 
     opengl = {
       s3tcSupport = true;
+      driSupport = true;
+      driSupport32Bit = true;
     };
 
     pulseaudio = {
