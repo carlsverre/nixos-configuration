@@ -17,5 +17,6 @@
     wpa_supplicant_gui
     xorg.xf86inputsynaptics
     rxvt_unicode-with-plugins
+    blueman
   ];
 }

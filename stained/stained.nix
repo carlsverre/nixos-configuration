@@ -61,6 +61,7 @@
     pulseaudio = {
       enable = true;
       support32Bit = true;
+      package = pkgs.pulseaudioFull;
     };
 
     bluetooth.enable = true;
