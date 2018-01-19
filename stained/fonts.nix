@@ -16,5 +16,17 @@
       lato
       inconsolata
     ];
+
+    fontconfig = {
+      enable = true;
+      antialias = true;
+      hinting.enable = true;
+      defaultFonts = {
+        monospace = [ "Hack" ];
+      };
+      ultimate = {
+        enable = true;
+      };
+    };
   };
 }
