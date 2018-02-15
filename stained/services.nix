@@ -31,12 +31,17 @@
       servers = [
         "/docker/172.18.0.1"
         "/memsql-master/172.18.0.1"
+        "/ops.memcompute.com/172.16.0.5"
+        "/ops.memcompute.com/172.16.1.5"
+        "/ops.memcompute.com/172.16.2.5"
         "8.8.8.8"
         "8.8.4.4"
       ];
       extraConfig = ''
         interface=lo
         bind-interfaces
+        cache-size=1000
+        no-negcache
       '';
     };
 
