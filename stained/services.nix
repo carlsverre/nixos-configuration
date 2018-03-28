@@ -25,14 +25,6 @@
       ];
     };
 
-    kubernetes = {
-      roles = ["master" "node"];
-      clusterCidr = "192.168.201.0/24";
-      apiserver = {
-        serviceClusterIpRange = "192.168.200.0/24";
-      };
-    };
-
     dnsmasq = {
       enable = true;
       resolveLocalQueries = true;

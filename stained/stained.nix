@@ -32,7 +32,6 @@
 
   networking = rec {
     hostName = "stained";
-    nat.enable = true;
 
     firewall = {
       # chromecast + docker support
