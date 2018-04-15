@@ -11,9 +11,12 @@
     kernelParams = [ "audit=0" ];
 
     extraModulePackages = with pkgs.linuxPackages; [
-      sysdig
       acpi_call
     ];
+
+    extraModprobeConfig = ''
+      options snd slots=snd-hda-intel
+    '';
 
     initrd.luks.devices = [
       {
@@ -63,6 +66,8 @@
       support32Bit = true;
       package = pkgs.pulseaudioFull;
     };
+
+    cpu.intel.updateMicrocode = true;
 
     bluetooth.enable = true;
   };
