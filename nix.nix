@@ -4,8 +4,6 @@
   nixpkgs.config.allowUnfree = true;
 
   nix = {
-    nixPath = [ "/etc/nixos" "nixos-config=/etc/nixos/configuration.nix" ];
-
     buildCores = 0;
     daemonIONiceLevel = 4;
     daemonNiceLevel = 10;
