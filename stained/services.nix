@@ -11,6 +11,10 @@
     docker = {
       enable = true;
       extraOptions = "--insecure-registry psy3.memcompute.com --bip 172.30.0.1/16";
+      storageDriver = "overlay2";
+      autoPrune = {
+        enable = true;
+      };
     };
   };
 
