@@ -69,31 +69,19 @@
           };
         };
 
-        "lummy.co" = {
-          globalRedirect = "www.lummy.co";
+        "resumesculptor.com" = {
+          globalRedirect = "www.resumesculptor.com";
           enableACME = true;
           forceSSL = true;
         };
 
-        "www.lummy.co" = {
+        "www.resumesculptor.com" = {
           forceSSL = true;
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/www-lummy-co";
+            root = "/srv/www-resumesculptor-com";
           };
-        };
-
-        "lummy.lighting" = {
-          globalRedirect = "www.lummy.co";
-          enableACME = true;
-          forceSSL = true;
-        };
-
-        "www.lummy.lighting" = {
-          globalRedirect = "www.lummy.co";
-          enableACME = true;
-          forceSSL = true;
         };
       };
     };
