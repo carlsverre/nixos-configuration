@@ -84,7 +84,9 @@
       libinput = {
         enable = true;
         tapping = false;
-        accelSpeed = "0.5";
+        accelProfile = "flat";
+        accelSpeed = "0.0";
+        disableWhileTyping = true;
       };
     };
 
