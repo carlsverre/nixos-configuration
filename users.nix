@@ -12,7 +12,7 @@
           ];
         isNormalUser = true;
         uid = 1000;
-        shell = "/run/current-system/sw/bin/zsh";
+        shell = pkgs.zsh;
     };
   };
 }
