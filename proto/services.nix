@@ -50,7 +50,7 @@
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/www-proto-sh";
+            root = "/srv/sh/proto/www";
           };
         };
 
@@ -65,7 +65,7 @@
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/www-carlsverre-com";
+            root = "/srv/com/carlsverre/www";
           };
         };
 
@@ -80,7 +80,16 @@
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/www-resumesculptor-com";
+            root = "/srv/com/resumesculptor/www";
+          };
+        };
+
+        "c83.me" = {
+          forceSSL = true;
+          enableACME = true;
+
+          locations."/" = {
+            root = "/srv/me/c83/root";
           };
         };
       };
