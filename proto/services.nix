@@ -84,12 +84,33 @@
           };
         };
 
+        "www.c83.me" = {
+          globalRedirect = "c83.me";
+          enableACME = true;
+          forceSSL = true;
+        };
+
         "c83.me" = {
           forceSSL = true;
           enableACME = true;
 
           locations."/" = {
-            root = "/srv/me/c83/root";
+            root = "/srv/me/c83/@";
+          };
+        };
+
+        "www.memory.sh" = {
+          globalRedirect = "memory.sh";
+          enableACME = true;
+          forceSSL = true;
+        };
+
+        "memory.sh" = {
+          forceSSL = true;
+          enableACME = true;
+
+          locations."/" = {
+            root = "/srv/sh/memory/@";
           };
         };
       };
