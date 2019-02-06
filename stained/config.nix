@@ -7,6 +7,19 @@
     EnableCommonNameFallbackForLocalAnchors = true;
   };
 
+  environment.etc."X11/xorg.conf.d/50-stained.conf".text = ''
+    Section "InputClass"
+      Identifier "Expert Wireless TB"
+      MatchProduct "Expert Wireless TB"
+      Driver "libinput"
+      Option "AccelProfile" "adaptive"
+      Option "AccelSpeed" "1"
+      Option "ScrollMethod" "button"
+      Option "ScrollButton" "8"
+      Option "ButtonMapping" "1 8 3 4 5 6 7 2 9"
+    EndSection
+  '';
+
   krb5 = {
     enable = true;
     kerberos = pkgs.heimdalFull;
