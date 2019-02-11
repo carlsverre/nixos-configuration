@@ -13,7 +13,7 @@
       MatchProduct "Expert Wireless TB"
       Driver "libinput"
       Option "AccelProfile" "adaptive"
-      Option "AccelSpeed" "1"
+      Option "AccelSpeed" "-0.5"
       Option "ScrollMethod" "button"
       Option "ScrollButton" "8"
       Option "ButtonMapping" "1 8 3 4 5 6 7 2 9"
