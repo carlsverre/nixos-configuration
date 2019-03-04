@@ -47,6 +47,10 @@
     extraHosts = "127.0.0.1 ${hostName}";
   };
 
+  powerManagement = {
+    enable = true;
+  };
+
   hardware = {
     trackpoint = {
       enable = true;
