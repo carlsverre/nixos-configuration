@@ -7,7 +7,7 @@
         extraGroups = [
           "wheel" "disk" "audio" "video"
           "networkmanager" "systemd-journal"
-          "docker" "vboxusers"
+          "docker"
         ];
         isNormalUser = true;
         uid = 1000;

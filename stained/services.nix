@@ -10,15 +10,9 @@
   virtualisation = {
     docker = {
       enable = true;
-      extraOptions = "--insecure-registry psy3.memcompute.com --bip 172.30.0.1/16";
+      extraOptions = "--insecure-registry psy3.memcompute.com";
       storageDriver = "overlay2";
       autoPrune = {
-        enable = true;
-      };
-    };
-
-    virtualbox = {
-      host = {
         enable = true;
       };
     };
@@ -45,8 +39,6 @@
       enable = true;
       resolveLocalQueries = true;
       servers = [
-        "/docker/172.18.0.1"
-        "/memsql-master/172.18.0.1"
         "/ops.memcompute.com/172.16.0.5"
         "/ops.memcompute.com/172.16.1.5"
         "/ops.memcompute.com/172.16.2.5"
