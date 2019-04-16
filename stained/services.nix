@@ -7,6 +7,13 @@
     wireless.enable = true;
   };
 
+
+  environment.etc."docker/daemon.json".text = ''
+    {
+      "bip": "172.17.0.1/16"
+    }
+  '';
+
   virtualisation = {
     docker = {
       enable = true;
@@ -33,6 +40,15 @@
       extraFlags = [
         "-label kbfs"
       ];
+    };
+
+    udev = {
+      extraRules = ''
+        # Ultimate Hacking Keyboard
+        SUBSYSTEM=="input", GROUP="input", MODE="0666"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", MODE:="0666", GROUP="plugdev"
+        KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", MODE="0666", GROUP="plugdev"
+      '';
     };
 
     dnsmasq = {
