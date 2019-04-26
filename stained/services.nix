@@ -17,7 +17,6 @@
   virtualisation = {
     docker = {
       enable = true;
-      extraOptions = "--insecure-registry psy3.memcompute.com";
       storageDriver = "overlay2";
       autoPrune = {
         enable = true;
@@ -55,9 +54,6 @@
       enable = true;
       resolveLocalQueries = true;
       servers = [
-        "/ops.memcompute.com/172.16.0.5"
-        "/ops.memcompute.com/172.16.1.5"
-        "/ops.memcompute.com/172.16.2.5"
         "8.8.8.8"
         "8.8.4.4"
       ];
